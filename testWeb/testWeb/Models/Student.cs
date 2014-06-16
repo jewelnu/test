@@ -8,5 +8,6 @@ namespace testWeb.Models
     public class Student
     {
         public string id { get; set; }
+        public string name { get; set; }
     }
 }
