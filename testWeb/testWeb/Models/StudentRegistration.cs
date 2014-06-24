@@ -2,21 +2,19 @@
 using System.Collections.Generic;
 using System.Linq;
 using System.Web;
-using System.Web.Razor.Generator;
 
 namespace testWeb.Models
 {
-    public class Student
+    public class StudentRegistration
     {
-        public string StudentId { get; set; }
-        public string Name { get; set; }
+        public int StudentRegistrationId { set; get; }
+        public string RegistrationNumber { set; get; }
+        public string Name { set; get; }
         public string Email { set; get; }
-        public string Contact { set; get; }
-        public DateTime RegistrationDate { set; get; }
+        public string ContactNumber { set; get; }
         public string Address { set; get; }
+        public DateTime Date { set; get; }
         public int DepartmentId { set; get; }
         public virtual Department Department { set; get; }
-
-
     }
 }
